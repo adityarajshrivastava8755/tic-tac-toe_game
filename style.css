@@ -1,0 +1,65 @@
+
+.new-game
+{
+    height:30px;
+    width: max-content;
+   margin-bottom: 80px;
+    background-color: yellowgreen;
+    border:1px solid;
+    font-size: 30px;
+    
+   
+    
+}
+.first
+{
+    display:flex
+}
+.second
+{
+    display:flex
+}
+.third
+{
+    display:flex
+}
+.box
+{
+    height:150px;
+    width:150px;
+    background-image:url("asset/th.jpeg");
+    border:1px solid whitesmoke;
+
+    
+   
+}
+.table
+{
+ position: relative;
+    border:1px solid;
+    width:fit-content;
+   margin-right: auto;
+   margin-left: auto;
+  
+  
+}
+.a,.b,.c,.d,.e,.f,.g,.h,.i
+{
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:transparent;
+    
+
+
+}
+.win
+{
+   position: absolute;
+   top: 190px;
+   left:160px;
+   background-color: blue;
+   color: aquamarine;
+    font-size:50px;
+   height:80px;
+}
