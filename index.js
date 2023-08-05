@@ -28,6 +28,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         document.querySelector(".a").innerHTML="o";
                         
                     }
+                    if(count>=5)
                     checkwinner();
                 }
 
@@ -48,6 +49,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         b = 1;
                         document.querySelector(".b").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
                 }
                 break;
@@ -67,6 +69,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         c = 1;
                         document.querySelector(".c").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
                 }
                 break;
@@ -87,6 +90,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         d = 1;
                         document.querySelector(".d").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
                 }
                 break;
@@ -106,6 +110,8 @@ for (var no = 0; no < lengthofloop; no++) {
                         e = 1;
                         document.querySelector(".e").innerHTML="o";
                     }
+                    if(count>=5)
+                    checkwinner();
 
 
                 }
@@ -126,7 +132,9 @@ for (var no = 0; no < lengthofloop; no++) {
                         f = 1;
                         document.querySelector(".f").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
+                    
                 }
                 break;
             case "box g":
@@ -146,6 +154,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         g = 1;
                         document.querySelector(".g").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
                 }
                 break;
@@ -165,6 +174,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         h = 1;
                         document.querySelector(".h").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
                 }
                 break;
@@ -184,6 +194,7 @@ for (var no = 0; no < lengthofloop; no++) {
                         i = 1;
                         document.querySelector(".i").innerHTML="o";
                     }
+                    if(count>=5)
                     checkwinner();
                 }
                 break;
@@ -203,45 +214,75 @@ for (var no = 0; no < lengthofloop; no++) {
              
             if (aa===bb && bb===cc) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
               
 
             }
             else if(aa===dd&&dd==gg) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
             }
             else if (gg===hh&&hh===ii) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
             }
             else if (cc===ff&&ff===ii) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
             }
             else if (cc===ee&&ee===gg) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
             }
             else if (aa===ee&&ee===ii) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
             }
             else if (bb===ee&&ee===hh) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
             }
             else if (dd===ee&&ee===ff) 
             {
-                document.querySelector(".win").innerHTML = "winner";
+                if(count%2==0)
+                document.querySelector(".win").innerHTML = "X is a winner";
+                else
+                document.querySelector(".win").innerHTML = "O is a winner";
                 z = 1;
+            }
+            else if(count==9)
+            {
+                document.querySelector(".win").innerHTML = "TIE";
+                z = 1;
+
             }
           
           
